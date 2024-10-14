@@ -1,0 +1,100 @@
+.header-container {
+    background-image: url('/Users/mason/projects/Portfolio-2024/Portfolio-2024/src/assets/background.jpg');
+    object-fit: contain;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-about-section {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.header-links {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+}
+
+.header-links svg {
+    height: 40px;
+    width: 40px;
+    fill: white;
+}
+.header-links a{
+    cursor: pointer;
+}
+
+.header-links svg:hover{
+    scale: 1.2;
+    fill: blue;
+}
+
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.link-button {
+    height: 3rem;
+    width: 10rem;
+    background-color: var(--alt-accent-color);
+    color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+}
+.link-button:hover{
+    background-color: var(--alt-accent-hover-color);
+}
+.link-button a{
+    flex-grow: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.accent {
+    background-color: var(--accent-color);
+}
+.accent:hover{
+    background-color: var(--accent-hover-color);
+}
+.header-content {
+    width: min(75rem, 100%);
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+}
+.header-image{
+    width: 50%;
+    object-fit: contain;
+}
+.page-container{
+    width: min(calc(100% - 2rem),73rem );
+    padding: 1rem;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}

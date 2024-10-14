@@ -1,0 +1,58 @@
+.navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+.navbar > :first-child{
+    margin-right: auto;
+}
+.navbar-contact {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 0;
+}
+.navbar-links {
+    list-style-type: none ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+.nav-name{
+    font-family: 'GreatVibes';
+    font-size: 2.5rem;
+    margin: 0;
+}
+.contact-nav-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.navbar-link{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.navbar-link:hover{
+    background-color: white;
+}
+.small-accent{
+    background-color: var(--accent-color);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.small-accent:hover{
+    background-color: var(--accent-hover-color);
+}
