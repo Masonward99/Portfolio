@@ -6,10 +6,8 @@ import './Nav.css'
 import Close from '../../assets/Icons/Close';
 function Nav() {
     let sidebar = useRef(null)
-    // sidebar.current.style.display ='none'
     function toggleSidebar(event) {
         event.preventDefault()
-        console.log('here')
         if (sidebar.current.style.display === ('none')) {
             sidebar.current.style.display = 'block'
         } else {
