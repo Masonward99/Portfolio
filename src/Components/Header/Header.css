@@ -10,7 +10,7 @@
 }
 
 .header-about-section {
-    max-width: 50%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -26,7 +26,7 @@
 .header-links svg {
     height: 40px;
     width: 40px;
-    fill: white;
+    fill: var(--main-text-color);
 }
 .header-links a{
     cursor: pointer;
@@ -34,7 +34,7 @@
 
 .header-links svg:hover{
     scale: 1.2;
-    fill: blue;
+    fill: var(--accent-color);
 }
 
 .header-buttons {
@@ -49,7 +49,7 @@
     height: 3rem;
     width: 10rem;
     background-color: var(--alt-accent-color);
-    color: white;
+    color: var(--main-text-color);
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -67,7 +67,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: white;
+    color: var(--main-text-color);
 }
 
 .accent {
@@ -90,11 +90,30 @@
     object-fit: contain;
 }
 .page-container{
-    width: min(calc(100% - 2rem),73rem );
-    padding: 1rem;
+    width: min(calc(100%),75rem );
     margin: 0 auto;
     padding-top: 0.5rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+}
+
+.header-title {
+    margin: var(--margin-m) 0;
+}
+.header-subtitle {
+    margin: var(--margin-m) 0;
+    color: var(--main-text-color);
+}
+
+@media screen and (max-width: 50rem){
+    .header-content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .header-about-section{
+        width: min(37.5rem, 100%);
+    }
+
 }

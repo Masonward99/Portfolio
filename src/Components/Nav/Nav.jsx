@@ -1,23 +1,54 @@
+import { useRef } from 'react';
 import Email from '../../assets/Icons/Email'
+import Hamburger from '../../assets/Icons/Hamburger';
 import Phone from '../../assets/Icons/Phone'
 import './Nav.css'
+import Close from '../../assets/Icons/Close';
 function Nav() {
+    let sidebar = useRef(null)
+    // sidebar.current.style.display ='none'
+    function toggleSidebar(event) {
+        event.preventDefault()
+        console.log('here')
+        if (sidebar.current.style.display === ('none')) {
+            sidebar.current.style.display = 'block'
+        } else {
+            sidebar.current.style.display = 'none'
+        }
+
+    }
     return (
+      <>
         <ul className="navbar">
-            <li><h3 className='nav-name'>Mason Ward</h3></li>
-            <li className='navbar-right'>
-                <ul className='navbar-contact'>
-                    <li className='contact-nav-item'><Phone/> 07459625984</li>
-                    <li className='contact-nav-item'><Email/> Masonward99@hotmail.com</li>
+            <li>
+                <h3 className="nav-name">Mason Ward</h3>
+            </li>
+            <li className="navbar-right hide-on-mobile">
+                <ul className="navbar-contact">
+                <li className="contact-nav-item">
+                    <Phone /> 07459 625 984
+                </li>
+                <li className="contact-nav-item">
+                    <Email /> Masonward99@hotmail.com
+                </li>
                 </ul>
-                <ul className='navbar-links'>
-                    <li className='navbar-link'>About</li>
-                    <li className='navbar-link'>Skills</li>
-                    <li className='navbar-link'>Projects</li>
-                    <li className='navbar-link small-accent'>Contact</li>
+                <ul className="navbar-links">
+                    <li className="navbar-link ">About</li>
+                    <li className="navbar-link">Skills</li>
+                    <li className="navbar-link">Projects</li>
+                    <li className="navbar-link small-accent">Contact</li>
                 </ul>
             </li>
+            <li className='hide-on-desktop'><button className='navbar-button' onClick={toggleSidebar}><Hamburger/></button></li>
         </ul>
-    )
+        <ul className="sidebar" ref={sidebar}>
+            <li className='close-button'><button onClick={toggleSidebar} className='navbar-button'><Close/></button></li>
+            <li className="sidebar-link"><a>About</a></li>
+            <li className="sidebar-link"><a>Skills</a></li>
+            <li className="sidebar-link"><a>Projects</a></li>
+            <li className="sidebar-link"><a>Contact</a></li>
+        </ul>
+      </>
+    );
 }
 export default Nav

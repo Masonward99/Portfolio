@@ -12,9 +12,9 @@ function Header() {
                 <Nav/>
                 <div className='header-content'>
                     <div className="header-about-section">
-                        <h1>Mason Ward</h1>
-                        <h2>Junior Developer</h2>
-                        <p>
+                        <h1 className='header-title'>Mason Ward</h1>
+                        <h2 className='header-subtitle'>Junior Developer</h2>
+                        <p className='header-text'>
                             Earlier this year I was looking for a new career, after a
                             recommendation from a friend I decided that a career in tech would
                             be right for me. As soon as I started working on the practice
@@ -36,7 +36,7 @@ function Header() {
                             </a></li>
                         </ul>
                         <ul className="header-buttons">
-                            <li className='link-button'><a href={cv} download={cv}>CV</a></li>
+                            <li className='link-button'><a href={cv} download={cv} target='blank'>CV</a></li>
                             <li className='link-button accent'><a>See my work</a></li>
                         </ul>
                     </div>
