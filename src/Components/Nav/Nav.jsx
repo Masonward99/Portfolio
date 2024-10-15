@@ -36,7 +36,7 @@ function Nav() {
                     <li className="navbar-link ">About</li>
                     <li className="navbar-link"><a href='#skills'>Skills</a></li>
                     <li className="navbar-link">Projects</li>
-                    <li className="navbar-link small-accent">Contact</li>
+                    <li className="navbar-link small-accent"><a href='#contact'>Contact</a></li>
                 </ul>
             </li>
             <li className='hide-on-desktop'><button className='navbar-button' onClick={toggleSidebar}><Hamburger/></button></li>
@@ -46,7 +46,7 @@ function Nav() {
             <li className="sidebar-link"><a>About</a></li>
             <li className="sidebar-link"><a href='#skills'>Skills</a></li>
             <li className="sidebar-link"><a>Projects</a></li>
-            <li className="sidebar-link"><a>Contact</a></li>
+            <li className="sidebar-link"><a href='#contact'>Contact</a></li>
         </ul>
       </>
     );

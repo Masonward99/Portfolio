@@ -95,7 +95,6 @@
 .page-container{
     width: min(calc(100%),75rem );
     margin: 0 auto;
-    padding-top: 0.5rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
