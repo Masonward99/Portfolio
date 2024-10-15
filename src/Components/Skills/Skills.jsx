@@ -13,12 +13,13 @@ import Python from "../../assets/Skills/Python"
 import React from "../../assets/Skills/React"
 import ReactNative from "../../assets/Skills/ReactNative"
 import VSCode from "../../assets/Skills/VSCode"
+import SectionHeading from "../SectionHeading"
 import './Skills.css'
 
 function Skills() {
     return (
-        <div className="skills-content">
-            <h2>Technologies and skills</h2>
+        <div className="skills-content" id="skills">
+            <SectionHeading title={'Skills'}/>
             <p>These are the skills that I have developed</p>
             <ul className="skills-showcase">
                 <li className="skill-item"><Css /><p>CSS</p></li>

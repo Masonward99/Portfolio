@@ -1,0 +1,14 @@
+.footer-container {
+    background-color: var(--alt-accent-color);
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer h3 {
+    font: var(--h4);
+    color: white;
+    margin: 1rem;
+}

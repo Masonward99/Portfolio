@@ -105,6 +105,11 @@
     align-items: center;
     justify-content: center;
 }
+.navbar-link a{
+    color: white;
+    height: 100%;
+    width: 100%;
+}
 .sidebar li {
     height: 4rem;
     display: flex;
