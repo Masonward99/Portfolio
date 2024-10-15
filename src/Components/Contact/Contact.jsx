@@ -6,18 +6,18 @@ import Email from '../../assets/Icons/Email';
 
 function Contact() {
     return (
-      <div className="contact-container" id='contact'>
+      <div className="contact-container" id='contact' method='POST' data-netlify='true' onSubmit='submit'>
         <div className="contact">
           <SectionHeading title={"Contact"} />
           <div className="contact-content">
-            <form className="contact-form">
+            <form className="contact-form" name='contact'>
                 <label htmlFor="name" >Name</label>
-                <input type="text" id="name" className='contact-input'/>
+                <input type="text" id="name" className='contact-input' name='name' required />
                 <label htmlFor="email">Email</label>
-                <input type="text" id="email" className='contact-input'/>
+                <input type="email" id="email" className='contact-input'name='email'required/>
                 <label>Message</label>
-                <textarea />
-                <button type="submit" className="form-button">
+                <textarea name='message' required/>
+                <button type="submit" className="form-button" >
                     Send
                 </button>
             </form>
