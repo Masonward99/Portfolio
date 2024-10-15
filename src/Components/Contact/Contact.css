@@ -49,6 +49,31 @@
     font: var(--big);
     margin: var(--margin-xxs) 0;
 }
+
+.contact-input {
+    background-color: black;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    padding: 0.5rem;
+    font: var(--uih3);
+}
+.form-textarea {
+    background-color: black;
+    font: var(--uih3);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    height: 5rem;
+    resize: vertical;
+    margin-bottom: 1rem;
+}
+
 @media screen and (max-width:50rem) {
     .contact-content{
         flex-direction: column;
