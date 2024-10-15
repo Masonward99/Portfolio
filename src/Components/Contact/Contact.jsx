@@ -16,8 +16,8 @@ function Contact() {
               method="POST"
               data-netlify="true"
               onSubmit="submit"
-              id="contact"
-            >
+                    >
+                <input type='hidden' name='form-name' value='contact'/>
               <label htmlFor="name">Name</label>
               <input
                 type="text"
