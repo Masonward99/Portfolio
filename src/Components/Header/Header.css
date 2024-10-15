@@ -1,5 +1,5 @@
 .header-container {
-    background-image: url('/Users/mason/projects/Portfolio-2024/Portfolio-2024/src/assets/background.jpg');
+    background-image: url('../../assets/background.jpg');
     object-fit: contain;
     width: calc(100% - 2rem);
     min-height: 100vh;
