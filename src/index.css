@@ -1,16 +1,53 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "NotoSerifOriya", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: black;
+  background-color: #bfdcf6;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+  --accent-color: #ff6a00;
+  --alt-accent-color:#c2a3ff;
+  --accent-hover-color: #e65c00;
+  --alt-accent-hover-color: #a17dcf;
+  --main-text-color:#ffffff;
+  --header-text-color:#0566ab;
+
+  --margin-xxs: .25rem;
+  --margin-xs: .5rem;
+  --margin-s: .75rem;
+  --margin-m: 1rem;
+  --margin-l: 1.25rem;
+  --margin-xl: 1.75rem;
+  --margin-xxl: 2.5rem;
+
+  --ff: "Inter", sans-serif;
+  --h1: bold 4rem/1em var(--ff);
+  --h2: bold 3rem/1.2em var(--ff);
+  --h3: bold 2.25rem/1.2em var(--ff);
+  --h4: bold 1.5rem/1.6em var(--ff);
+  --big: 1.25rem/1.6em var(--ff);
+  --p: 1rem/1.6em var(--ff);
+  --small: .75rem/2em var(--ff);
+
+  /* UIs */
+  --h1ui: bold 3rem/1.2em var(--ff);
+  --h2ui: bold 2.25rem/1.2em var(--ff);
+  --h3ui: bold 1.5rem/1.2em var(--ff);
+  --h4ui: bold 1.12rem/1.6em var(--ff);
+  --bigui: 1rem/1.6em var(--ff);
+  --pui: .8rem/1.6em var(--ff);
+  --smallui: .75rem/1.8em var(--ff);
+}
+html {
+  scroll-behavior:smooth;
 }
 
 a {
@@ -18,9 +55,9 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
-a:hover {
+/* a:hover {
   color: #535bf2;
-}
+} */
 
 body {
   margin: 0;
@@ -52,6 +89,19 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+@font-face {
+  font-family: 'GreatVibes' ;
+  src: url('./assets/Fonts/GreatVibes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSerifOriya';
+  src: url('./assets/Fonts/NotoSerifOriya-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @media (prefers-color-scheme: light) {
