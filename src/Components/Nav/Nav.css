@@ -29,6 +29,7 @@
     font-family: 'GreatVibes';
     font-size: 3rem;
     margin: 0;
+    margin-left: 0.5rem;
 }
 .contact-nav-item{
     display: flex;
@@ -66,14 +67,16 @@
     gap: 1rem;
     margin: 0;
     padding: 0;
-    width: 9rem;
-    position: absolute;
+    width: 16rem;
+    position: fixed;
     top: 0;
     right: 0;
     height: 100%;
     background-color: var(--accent-color);
     z-index: 1;
     display: none;
+    opacity: 0.9;
+    backdrop-filter: blur(10px);
 }
 .navbar-button {
     border: 0;
@@ -89,11 +92,35 @@
 .sidebar-link:hover {
     background-color: var(--accent-hover-color);
 }
+.sidebar-link:hover .close-button{
+    background-color: var(--accent-hover-color);
+}
 .sidebar-link a {
     width: 100%;
     height: 100%;
     color: var(--main-text-color);
+    cursor: pointer;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.sidebar li {
+    height: 4rem;
+    display: flex;
+}
+
+.sidebar svg {
+    height: 40px;
+    width: 40px;
+}
+
+.close-button   {
+    height: 100%;
+    width: 100%;   
+}
+
+
 @media  screen and (max-width: 50rem) {
     .hide-on-desktop{
         display: block;

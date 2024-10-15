@@ -8,7 +8,9 @@ function Nav() {
     let sidebar = useRef(null)
     function toggleSidebar(event) {
         event.preventDefault()
-        if (sidebar.current.style.display === ('none')) {
+        if (sidebar.current.style.display === 'none' ||
+            sidebar.current.style.display === ''
+        ) {
             sidebar.current.style.display = 'block'
         } else {
             sidebar.current.style.display = 'none'
@@ -40,7 +42,7 @@ function Nav() {
             <li className='hide-on-desktop'><button className='navbar-button' onClick={toggleSidebar}><Hamburger/></button></li>
         </ul>
         <ul className="sidebar" ref={sidebar}>
-            <li className='close-button'><button onClick={toggleSidebar} className='navbar-button'><Close/></button></li>
+            <li className='sidebar-link'><button onClick={toggleSidebar} className='navbar-button close-button'><Close/></button></li>
             <li className="sidebar-link"><a>About</a></li>
             <li className="sidebar-link"><a>Skills</a></li>
             <li className="sidebar-link"><a>Projects</a></li>

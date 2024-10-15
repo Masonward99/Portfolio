@@ -12,7 +12,7 @@ function Header() {
                 <Nav/>
                 <div className='header-content'>
                     <div className="header-about-section">
-                        <h1 className='header-title'>Mason Ward</h1>
+                        <h1 className='header-title'>Hi, I'm Mason Ward</h1>
                         <h2 className='header-subtitle'>Junior Developer</h2>
                         <p className='header-text'>
                             Earlier this year I was looking for a new career, after a
