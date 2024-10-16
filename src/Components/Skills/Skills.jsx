@@ -19,8 +19,7 @@ import './Skills.css'
 function Skills() {
     return (
         <div className="skills-content" id="skills">
-            <SectionHeading title={'Skills'}/>
-            <p>These are the skills that I have developed</p>
+            <SectionHeading title={'Skills'} />
             <ul className="skills-showcase">
                 <li className="skill-item"><Css /><p>CSS</p></li>
                 <li className="skill-item"><Html /><p>HTML</p></li>

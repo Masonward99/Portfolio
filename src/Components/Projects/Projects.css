@@ -6,6 +6,9 @@
     margin: auto;
     padding: 2rem 1rem;
     text-align: left;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
 }
 .project-card {
     display: flex;
@@ -49,6 +52,12 @@
     width: 100%;
     cursor: pointer;
 }
+.project-github:hover{
+    scale: 1.25;
+}
+.project-github:hover svg{
+    fill: var(--accent-color);
+}
 .project-video{
     width: calc(100% - 4px);
     aspect-ratio: 16/9;
@@ -76,6 +85,18 @@
     font: var(--h2);
     text-align: center;
     margin: var(--margin-s);
+}
+
+.project-details h4{ 
+    font: var(--h4);
+    margin: var(--margin-s);
+}
+.project-details p{
+    margin-top: 0;
+}
+.projects-intro {
+    font: var(--big);
+    margin: 0;
 }
 @media screen and (max-width:55rem) {
     .project-card {

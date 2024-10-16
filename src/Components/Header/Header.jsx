@@ -8,39 +8,70 @@ import cv from '../../assets/Mason-Ward-CV.pdf'
 function Header() {
     return (
         <div className="header-container">
-            <div className='page-container'>
-                <Nav/>
-                <div className='header-content' id='about'>
+            <div className="page-container">
+                <Nav />
+                <div className="header-content" id="about">
                     <div className="header-about-section">
-                        <h1 className='header-title'>Hi, I&apos;m Mason Ward</h1>
-                        <h2 className='header-subtitle'>Junior Developer</h2>
-                        <p className='header-text'>
-                            Earlier this year I was looking for a new career, after a
-                            recommendation from a friend I decided that a career in tech would
-                            be right for me. As soon as I started working on the practice
-                            materials for the Northcoders course I was hooked, I loved solving
-                            the problems that were provided, as I was learning new things, I was
-                            refactoring my code to incorporate these new methods. I enjoyed it
-                            so much I decided to join the march bootcamp instead of waiting
-                            until after university to join the may cohort.
+                        <h1 className="header-title">
+                            Hi, I&apos;m Mason Ward
+                        </h1>
+                        <h2 className="header-subtitle">Junior Developer</h2>
+                        <p className="header-text">
+                            From the moment I wrote my first line of code, I
+                            knew I had found my passion. The thrill of solving
+                            complex problems and the excitement of learning new
+                            tools to tackle future challenges sparked a deep
+                            interest in me. This drive led me to take the next
+                            step and enrol in a coding bootcamp, solidifying my
+                            decision to pursue a career in software engineering.
+                            After completing this bootcamp I enrolled part-time
+                            at The Open University to deepen my knowledge.
                         </p>
                         <ul className="header-links">
-                            <li><a href="https://github.com/Masonward99" target='blank' name='github'>
-                                <Github />
-                            </a></li>
-                            <li><a href="mailto: masonward99@hotmail.com" target='blank' name='email'>
+                            <li>
+                                <a
+                                    href="https://github.com/Masonward99"
+                                    target="blank"
+                                    name="github"
+                                >
+                                    <Github />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="mailto: masonward99@hotmail.com"
+                                    target="blank"
+                                    name="email"
+                                >
                                     <Email />
-                            </a></li>
-                            <li><a href="https://www.linkedin.com/in/mason-ward-177475170/" target='blank' name='linkedin'>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/mason-ward-177475170/"
+                                    target="blank"
+                                    name="linkedin"
+                                >
                                     <Linkedin />
-                            </a></li>
+                                </a>
+                            </li>
                         </ul>
                         <ul className="header-buttons">
-                            <li className='link-button'><a href={cv} download={cv} target='blank'>CV</a></li>
-                            <li className='link-button accent'><a href='#projects'>See my work</a></li>
+                            <li className="link-button">
+                                <a href={cv} download={cv} target="blank">
+                                    CV
+                                </a>
+                            </li>
+                            <li className="link-button accent">
+                                <a href="#projects">See my work</a>
+                            </li>
                         </ul>
                     </div>
-                    <img src={developer} className='header-image' alt='Image of developer working'/>
+                    <img
+                        src={developer}
+                        className="header-image"
+                        alt="Image of developer working"
+                    />
                 </div>
             </div>
         </div>
