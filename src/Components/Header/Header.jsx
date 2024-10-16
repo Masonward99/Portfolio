@@ -25,13 +25,13 @@ function Header() {
                             until after university to join the may cohort.
                         </p>
                         <ul className="header-links">
-                            <li><a href="https://github.com/Masonward99" target='blank'>
+                            <li><a href="https://github.com/Masonward99" target='blank' name='github'>
                                 <Github />
                             </a></li>
-                            <li><a href="mailto: masonward99@hotmail.com" target='blank'>
+                            <li><a href="mailto: masonward99@hotmail.com" target='blank' name='email'>
                                     <Email />
                             </a></li>
-                            <li><a href="https://www.linkedin.com/in/mason-ward-177475170/" target='blank'>
+                            <li><a href="https://www.linkedin.com/in/mason-ward-177475170/" target='blank' name='linkedin'>
                                     <Linkedin />
                             </a></li>
                         </ul>
@@ -40,7 +40,7 @@ function Header() {
                             <li className='link-button accent'><a href='#projects'>See my work</a></li>
                         </ul>
                     </div>
-                    <img src={developer} className='header-image'/>
+                    <img src={developer} className='header-image' alt='Image of developer working'/>
                 </div>
             </div>
         </div>

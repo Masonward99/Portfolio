@@ -39,10 +39,10 @@ function Nav() {
                     <li className="navbar-link small-accent"><a href='#contact'>Contact</a></li>
                 </ul>
             </li>
-            <li className='hide-on-desktop'><button className='navbar-button' onClick={toggleSidebar}><Hamburger/></button></li>
+            <li className='hide-on-desktop'><button className='navbar-button' onClick={toggleSidebar} name='menu'><Hamburger/></button></li>
         </ul>
         <ul className="sidebar" ref={sidebar}>
-            <li className='sidebar-link'><button onClick={toggleSidebar} className='navbar-button close-button'><Close/></button></li>
+            <li className='sidebar-link'><button onClick={toggleSidebar} className='navbar-button close-button' name='close'><Close/></button></li>
             <li className="sidebar-link"><a href='#about'>About</a></li>
             <li className="sidebar-link"><a href='#skills'>Skills</a></li>
             <li className="sidebar-link"><a href='#projects'>Projects</a></li>
