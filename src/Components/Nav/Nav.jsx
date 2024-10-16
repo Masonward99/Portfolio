@@ -35,7 +35,7 @@ function Nav() {
                 <ul className="navbar-links">
                     <li className="navbar-link ">About</li>
                     <li className="navbar-link"><a href='#skills'>Skills</a></li>
-                    <li className="navbar-link">Projects</li>
+                    <li className="navbar-link"><a href='#projects'>Projects</a></li>
                     <li className="navbar-link small-accent"><a href='#contact'>Contact</a></li>
                 </ul>
             </li>
@@ -43,9 +43,9 @@ function Nav() {
         </ul>
         <ul className="sidebar" ref={sidebar}>
             <li className='sidebar-link'><button onClick={toggleSidebar} className='navbar-button close-button'><Close/></button></li>
-            <li className="sidebar-link"><a>About</a></li>
+            <li className="sidebar-link">About</li>
             <li className="sidebar-link"><a href='#skills'>Skills</a></li>
-            <li className="sidebar-link"><a>Projects</a></li>
+            <li className="sidebar-link"><a href='#projects'>Projects</a></li>
             <li className="sidebar-link"><a href='#contact'>Contact</a></li>
         </ul>
       </>
