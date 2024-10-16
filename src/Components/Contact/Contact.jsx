@@ -6,7 +6,7 @@ import Email from '../../assets/Icons/Email';
 
 function Contact() {
     return (
-      <div className="contact-container">
+      <div className="contact-container" id='contact'>
         <div className="contact">
             <SectionHeading title={"Contact"} />
             <div className="contact-content">
