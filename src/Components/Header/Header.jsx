@@ -37,7 +37,7 @@ function Header() {
                         </ul>
                         <ul className="header-buttons">
                             <li className='link-button'><a href={cv} download={cv} target='blank'>CV</a></li>
-                            <li className='link-button accent'><a>See my work</a></li>
+                            <li className='link-button accent'><a href='#projects'>See my work</a></li>
                         </ul>
                     </div>
                     <img src={developer} className='header-image'/>

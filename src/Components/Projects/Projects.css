@@ -1,0 +1,92 @@
+.projects-container {
+    background-color: white;
+}
+.projects-content {
+    width: min(73rem, calc(100% - 2rem));
+    margin: auto;
+    padding: 2rem 1rem;
+    text-align: left;
+}
+.project-card {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+}
+.project-card-container{
+    padding: 1rem;
+    background-color: var(--alt-accent-color);
+    width: calc(100% - 2rem);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin: auto;
+    color: var(--main-text-color);
+}
+.project-demo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.project-details {
+    width: 50%;
+    text-align: left;
+}
+.project-demo-buttons{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 1rem;
+}
+.project-github svg{
+    height: 3rem;
+    width: 3rem;
+}
+.project-github a{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.project-video{
+    width: calc(100% - 4px);
+    aspect-ratio: 16/9;
+}
+
+.project-tags{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.project-tags li {
+    background-color: var(--header-text-color);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    text-wrap: nowrap;
+}
+.project-card-title {
+    font: var(--h2);
+    text-align: center;
+    margin: var(--margin-s);
+}
+@media screen and (max-width:55rem) {
+    .project-card {
+        flex-direction: column;
+        gap: 0;
+    }
+    .project-demo {
+        width: 100%;
+    }
+    .project-details{
+        width: 100%;
+        order: 1;
+    }
+}
