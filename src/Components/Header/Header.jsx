@@ -10,7 +10,7 @@ function Header() {
         <div className="header-container">
             <div className='page-container'>
                 <Nav/>
-                <div className='header-content'>
+                <div className='header-content' id='about'>
                     <div className="header-about-section">
                         <h1 className='header-title'>Hi, I&apos;m Mason Ward</h1>
                         <h2 className='header-subtitle'>Junior Developer</h2>

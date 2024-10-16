@@ -26,7 +26,7 @@ function Contact() {
                         name="name"
                         required
                         placeholder='Enter your name'
-                                
+                        autoComplete='name'
                     />
                     <label htmlFor="email">Email</label>
                     <input
@@ -36,9 +36,10 @@ function Contact() {
                         name="email"
                         required
                         placeholder='Enter your email'
+                        autoComplete='email'
                     />
-                    <label>Message</label>
-                    <textarea name="message" required placeholder='Enter your message' className='form-textarea'/>
+                    <label htmlFor='message'>Message</label>
+                    <textarea name="message" required placeholder='Enter your message' className='form-textarea' id='message'/>
                     <button type="submit" className="form-button">
                         Send
                     </button>
