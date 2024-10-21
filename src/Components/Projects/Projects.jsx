@@ -2,6 +2,7 @@ import SectionHeading from "../SectionHeading";
 import Minesweeper from "./Minesweeper";
 import NCGames from "./NCGames";
 import './Projects.css'
+import Tetris from "./Tetris";
 
 function Projects() {
     return (
@@ -15,6 +16,7 @@ function Projects() {
                 </p>
                 <NCGames />
                 <Minesweeper />
+                <Tetris/>
             </div>
         </div>
     );

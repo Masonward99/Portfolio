@@ -1,14 +1,12 @@
 import Github from "../../assets/Icons/Github";
+import minesweeper from '../../assets/minesweeper.png'
 function Minesweeper() {
     return (
         <div className="project-card-container">
             <h3 className="project-card-title">Minesweeper</h3>
             <div className="project-card">
                 <div className="project-demo">
-                    <iframe
-                        className="project-video"
-                        src="https://www.youtube.com/embed/J5FlI3ndrKw"
-                    ></iframe>
+                    <img className="project-video" src={minesweeper}/>
                     <ul className="project-demo-buttons">
                         <li className="link-button accent">
                             <a
