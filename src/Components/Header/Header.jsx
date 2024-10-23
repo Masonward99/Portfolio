@@ -4,7 +4,7 @@ import Linkedin from '../../assets/Icons/Linkedin';
 import developer from '../../assets/developer-no-bg.png'
 import Nav from '../Nav/Nav';
 import './Header.css'
-import cv from '../../assets/Mason-ward-cv.pdf'
+import cv from '../../assets/Mason-Ward-CV.pdf'
 function Header() {
     return (
         <div className="header-container">
